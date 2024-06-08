@@ -21,7 +21,7 @@ const Bookshelf = () => {
     <>
       <Background />
       <Toaster position="top-right" reverseOrder={false} />
-      <div className='h-[100dvh] w-full flex flex-col justify-center items-center p-4 gap-5'>
+      <div className='h-full w-full flex flex-col justify-center items-center p-4 gap-5'>
         <Link to='/' className='p-2 bg-blue-600 text-white rounded'>
           Back to Search
         </Link>
