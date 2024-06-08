@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Book Search and Bookshelf App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React-based application that allows users to search for books using the Open Library API and add them to a personal bookshelf. The bookshelf is stored using the Web Storage API (`localStorage`) to persist data between sessions.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Search Books**: Users can search for books by title and see real-time search results.
+- **Add to Bookshelf**: Users can add books from the search results to their personal bookshelf.
+- **Personal Bookshelf**: Users can view their saved books on a separate bookshelf page.
+- **Remove from Bookshelf**: Users can remove books from their personal bookshelf.
+- **Persistent Storage**: Bookshelf data is persisted using `localStorage`.
 
-### `npm start`
+## Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[![App Screenshot](https://i.postimg.cc/Gh8cNg7N/working.png)](https://postimg.cc/0bvRKnqd)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+Follow these steps to run the project locally:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/abhishekyeole27/booksearch.git
+   cd book-search-app
+   ```
 
-### `npm run build`
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Start the Development Server**:
+   ```bash
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **Open the App**:
+   Open your browser and navigate to `http://localhost:3000` to see the application in action.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Structure
 
-### `npm run eject`
+- **`src/`**: Contains the main source code for the application.
+  - **`components/`**: Contains all the React components.
+    - **`Card/`**: Contains the `Card.jsx` component and associated styles.
+    - **`Background/`**: Contains the `Background.jsx` component for the app background.
+    - **`Home.jsx`**: Component for the main search page.
+    - **`BookShelf.jsx`**: Component for the bookshelf page.
+  - **`assets/`**: Contains static assets such as images and icons.
+  - **`App.jsx`**: The main application component with routing.
+  - **`index.js`**: Entry point for the React application.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Technologies Used
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React
+- React Router
+- Open Library API
+- Local Storage API
+- Tailwind CSS
+- Iconify
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contributing
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Contributions are welcome! Feel free to submit a pull request or open an issue for any bugs or feature requests.
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Acknowledgements
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Open Library API](https://openlibrary.org/developers/api)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
